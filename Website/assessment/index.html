@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Purchase</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vegetable Purchase</h1>
+        <form id="vegetableForm">
+            
+            <div class="vegetable">
+                <label for="tomato">Tomato (40 INR/kg): </label>
+                <input type="text" id="tomatoPrice" value="40" readonly> INR
+                <input type="number" id="tomatoQty" min="0.5" max="3" step="0.5" placeholder="kg">
+                <span class="error" id="tomatoError"></span>
+            </div>
+            <div class="vegetable">
+                <label for="cucumber">Cucumber (20 INR/kg): </label>
+                <input type="text" id="cucumberPrice" value="20" readonly> INR
+                <input type="number" id="cucumberQty" min="0.5" max="3" step="0.5" placeholder="kg">
+                <span class="error" id="cucumberError"></span>
+            </div>
+            <div class="vegetable">
+                <label for="beans">Beans (60 INR/kg): </label>
+                <input type="text" id="beansPrice" value="60" readonly> INR
+                <input type="number" id="beansQty" min="0.5" max="3" step="0.5" placeholder="kg">
+                <span class="error" id="beansError"></span>
+            </div>
+            <div class="vegetable">
+                <label for="carrot">Carrot (100 INR/kg): </label>
+                <input type="text" id="carrotPrice" value="100" readonly> INR
+                <input type="number" id="carrotQty" min="0.5" max="3" step="0.5" placeholder="kg">
+                <span class="error" id="carrotError"></span>
+            </div>
+            <div class="vegetable">
+                <label for="potato">Potato (40 INR/kg): </label>
+                <input type="text" id="potatoPrice" value="40" readonly> INR
+                <input type="number" id="potatoQty" min="0.5" max="3" step="0.5" placeholder="kg">
+                <span class="error" id="potatoError"></span>
+            </div>
+            <div class="vegetable">
+                <label for="onion">Onion (30 INR/kg): </label>
+                <input type="text" id="onionPrice" value="30" readonly> INR
+                <input type="number" id="onionQty" min="0.5" max="3" step="0.5" placeholder="kg">
+                <span class="error" id="onionError"></span>
+            </div>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+        <div id="totalAmount" class="total"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

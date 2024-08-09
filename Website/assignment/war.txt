@@ -1,0 +1,13 @@
+function calculateTotal() {
+    const maxQty = 3;
+    const minQty = 0.5;
+    const stepQty = 0.5;
+
+    const prices = {
+        tomato: 40,
+        cucumber: 20,
+        beans: 60,
+        carrot: 100,
+        potato: 40,
+        onion: 30
+    };
